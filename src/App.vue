@@ -1,7 +1,39 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+
+  import PhoneticandoHeader from './components/PhoneticandoHeader.vue';
+
+  import HeadingTwo from './components/HeadingTwo.vue';
+
+  import HeadingThree from './components/HeadingThree.vue';
+
+  import PhoneticandoFooter from './components/PhoneticandoFooter.vue';
+
 </script>
 
 <template>
-  <HelloWorld />
+
+  <header>
+
+    <PhoneticandoHeader>Phoneticando Hub</PhoneticandoHeader>
+
+  </header>
+
+  <main>
+
+    <HeadingTwo>Elementary</HeadingTwo>
+
+    <HeadingThree>Part 01</HeadingThree>
+
+  </main>
+
+  <footer>
+
+    <PhoneticandoFooter />
+
+  </footer>
+
 </template>
+
+<style scoped>
+
+</style>
