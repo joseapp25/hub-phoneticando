@@ -20,9 +20,9 @@
 
   <main>
 
-    <HeadingTwo>Elementary</HeadingTwo>
+    <HeadingTwo>Hub</HeadingTwo>
 
-    <HeadingThree>Part 01</HeadingThree>
+    <HeadingThree>Part 01: App</HeadingThree>
 
   </main>
 
