@@ -1,16 +1,30 @@
 <script>
 
+    import PhoneticandoHeader from '../components/PhoneticandoHeader.vue';
+
+    import HeadingTwo from '../components/HeadingTwo.vue';
+
+    import HeadingThree from '../components/HeadingThree.vue';
+
+    import PhoneticandoFooter from '../components/PhoneticandoFooter.vue';
+
 </script>
 
 <template>
 
+    <header>        
+
+    </header>
+
     <main>
 
-        <h1>Lessons</h1>
-
-        <p>This is the lessons page.</p>
+        <div>lessons</div>
 
     </main>
+
+    <footer>
+
+    </footer>
 
 </template>
 
