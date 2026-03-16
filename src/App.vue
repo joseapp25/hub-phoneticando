@@ -1,39 +1,9 @@
-<script setup>
-
-  import PhoneticandoHeader from './components/PhoneticandoHeader.vue';
-
-  import HeadingTwo from './components/HeadingTwo.vue';
-
-  import HeadingThree from './components/HeadingThree.vue';
-
-  import PhoneticandoFooter from './components/PhoneticandoFooter.vue';
-
-</script>
-
 <template>
 
-  <header>
+  <div class="app">
 
-    <PhoneticandoHeader>Phoneticando Hub</PhoneticandoHeader>
-
-  </header>
-
-  <main>
-
-    <HeadingTwo>Hub</HeadingTwo>
-
-    <HeadingThree>Part 01: App</HeadingThree>
-
-  </main>
-
-  <footer>
-
-    <PhoneticandoFooter />
-
-  </footer>
+    <router-view />
+    
+  </div>
 
 </template>
-
-<style scoped>
-
-</style>
