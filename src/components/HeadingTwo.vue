@@ -1,19 +1,8 @@
-<script setup>
-
-    import { ref } from 'vue'
-
-    const count = ref(0)
-
-</script>
-
 <template>
-
     <h2 class="heading-two"><slot></slot></h2>
-
 </template>
 
 <style scoped>
-
     .heading-two {
         scroll-margin-top: 64px;
         margin-bottom: 16px;
@@ -24,5 +13,4 @@
         padding: 4px;
         background-color: var(--cerulean100);
     }
-
 </style>
