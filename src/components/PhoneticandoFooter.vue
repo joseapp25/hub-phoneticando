@@ -70,7 +70,9 @@
         border-radius: 4px;
         padding: 4px;
         cursor: pointer;
+        display: flex;
         align-items: center;
+        justify-content: center;
         transition-duration: 0.2s;
         fill: var(--cerulean600);
     }
@@ -78,7 +80,7 @@
     .contacts-link:hover {
         background-color: var(--cerulean600);
         transition-duration: 0.2s;
-        box-shadow: 0px 0px 4px var(--cerulean800);
+        box-shadow: 0px 0px 4px var(--cerulean600);
         fill: var(--graycool50);
     }
 

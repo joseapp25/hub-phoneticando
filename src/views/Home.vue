@@ -1,5 +1,8 @@
 <template>
     <header>
+        <nav>
+            <PhoneticandoGlobalMenu />
+        </nav>
         <PhoneticandoHeader>Home</PhoneticandoHeader>
     </header>
     <main>
@@ -8,6 +11,9 @@
         <nav>
             <router-link to="/lessons">Lessons</router-link>
         </nav>
+        <div style="margin-bottom: 1024px;">
+
+        </div>
     </main>
     <footer>
         <PhoneticandoFooter />
@@ -15,6 +21,7 @@
 </template>
 
 <script setup>
+    import PhoneticandoGlobalMenu from '../components/PhoneticandoGlobalMenu.vue';
     import PhoneticandoHeader from '../components/PhoneticandoHeader.vue';
     import HeadingTwo from '../components/HeadingTwo.vue';
     import HeadingThree from '../components/HeadingThree.vue';
