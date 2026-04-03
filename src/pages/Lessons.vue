@@ -1,17 +1,14 @@
 <template>
     <header>
         <nav>
-            <PhoneticandoGlobalMenu />
+            <PhoneticandoGlobalMenu />      
         </nav>
-        <PhoneticandoHeader>Home</PhoneticandoHeader>
+        <PhoneticandoHeader></PhoneticandoHeader>
     </header>
     <main>
-        <div class="test-style">
-            <HeadingTwo>Home Main Title</HeadingTwo>
-            <HeadingThree>Home Subtitle</HeadingThree>
-            <nav>
-                <router-link to="/lessons">Lessons</router-link>
-            </nav>
+        <div class="test-main">
+            <HeadingTwo>Lessons Main Title</HeadingTwo>
+            <HeadingThree>Lessons Subtitle</HeadingThree>       
         </div>
     </main>
     <footer>
@@ -29,11 +26,12 @@
 
 <style scoped>
 
-.test-style {
-    margin-bottom: 512px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 64vw;
-}
+    .test-main {
+        margin-top: 264px;
+        margin-bottom: 264px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 64vw;
+    }
 
 </style>
