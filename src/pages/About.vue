@@ -8,7 +8,7 @@
     <main>
         <div class="test-main">
             <HeadingTwo>About Main Title</HeadingTwo>
-            <HeadingThree>About Subtitle</HeadingThree>       
+            <HeadingThree>About Subtitle</HeadingThree>
         </div>
     </main>
     <footer>

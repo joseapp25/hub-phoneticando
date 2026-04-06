@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../pages/Home.vue'
 import Lessons from '../pages/Lessons.vue'
+import Phonetics from '../pages/Phonetics.vue'
+import About from '../pages/About.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -18,9 +20,15 @@ const router = createRouter({
             meta: { title: 'Lessons' },
         },
         {
+            path: '/phonetics',
+            name: 'phonetics',
+            component: Phonetics,
+            meta: { title: 'Phonetics' },
+        },
+        {
             path: '/about',
             name: 'about',
-            component: Lessons,
+            component: About,
             meta: { title: 'About' },
         }
     ]

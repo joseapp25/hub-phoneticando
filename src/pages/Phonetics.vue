@@ -1,14 +1,14 @@
 <template>
     <header>
         <nav>
-            <PhoneticandoGlobalMenu />         
+            <PhoneticandoGlobalMenu />      
         </nav>
         <PhoneticandoHeader></PhoneticandoHeader>
     </header>
     <main>
         <div class="test-main">
-            <HeadingTwo>Home Main Title</HeadingTwo>
-            <HeadingThree>Home Subtitle</HeadingThree>
+            <HeadingTwo>Phonetics Main Title</HeadingTwo>
+            <HeadingThree>Phonetics Subtitle</HeadingThree>
         </div>
     </main>
     <footer>

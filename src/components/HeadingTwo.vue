@@ -12,5 +12,6 @@
         border-radius: 4px;
         padding: 2px;
         background-color: var(--cerulean100);
+        color: var(--graycool800);
     }
 </style>
