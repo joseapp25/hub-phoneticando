@@ -16,6 +16,12 @@ const router = createRouter({
             name: 'lessons',
             component: Lessons,
             meta: { title: 'Lessons' },
+        },
+        {
+            path: '/about',
+            name: 'about',
+            component: Lessons,
+            meta: { title: 'About' },
         }
     ]
 })

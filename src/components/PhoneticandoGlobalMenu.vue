@@ -14,6 +14,7 @@
     <div class="menu-container">
         <router-link class="menu-container-router-link" to="/">Home</router-link>
         <router-link class="menu-container-router-link" to="/lessons">Lessons</router-link>
+        <router-link class="menu-container-router-link" to="/about">About</router-link>
     </div>
 </template>
 
