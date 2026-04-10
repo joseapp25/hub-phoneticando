@@ -4,6 +4,7 @@
             <path d="M899.471 169.143V32L124.531 169.143H899.471Z"/>
             <path d="M757.135 717.714L899.471 224H124.531V498.286H266.867L124.531 992H899.471V717.714H757.135Z"/>
         </svg>
+        <p>#breadcrumbs</p>
         <svg class="global-menu-hamburger" viewBox="0 0 1024 1024" @click="toggleMenu">
             <path d="M853.335 341.333H170.668V256H853.335V341.333Z"/>
             <path d="M853.335 554.667H170.668V469.333H853.335V554.667Z"/>
@@ -156,4 +157,5 @@
         opacity: 0;
         transform: translateY(-8px);
     }
+
 </style>
