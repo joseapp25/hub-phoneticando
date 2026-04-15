@@ -57,7 +57,8 @@
         height: 40px;
         top: 0;
         gap: 4px;
-        background-color: white;
+        background-color: var(--cerulean100);
+        color: var(--graycool800);
         box-shadow: 0px 0px 8px var(--graycool200);
         z-index: 1;
     }
