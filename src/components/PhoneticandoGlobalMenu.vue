@@ -1,9 +1,11 @@
 <template>
     <div class="global-menu">
-        <svg class="global-menu-logo" viewBox="0 0 1024 1024">
-            <path d="M899.471 169.143V32L124.531 169.143H899.471Z"/>
-            <path d="M757.135 717.714L899.471 224H124.531V498.286H266.867L124.531 992H899.471V717.714H757.135Z"/>
-        </svg>
+        <router-link to="/">
+            <svg class="global-menu-logo" viewBox="0 0 1024 1024">
+                <path d="M899.471 169.143V32L124.531 169.143H899.471Z"/>
+                <path d="M757.135 717.714L899.471 224H124.531V498.286H266.867L124.531 992H899.471V717.714H757.135Z"/>
+            </svg>
+        </router-link>
         <p>#breadcrumbs</p>
         <svg class="global-menu-hamburger" viewBox="0 0 1024 1024" @click="toggleMenu">
             <path d="M853.335 341.333H170.668V256H853.335V341.333Z"/>
@@ -56,32 +58,10 @@
         width: 100vw;
         height: 40px;
         top: 0;
-        gap: 4px;
-        background-color: var(--cerulean100);
-        color: var(--graycool800);
-        box-shadow: 0px 0px 8px var(--graycool200);
+        background-color: var(--graycool900);
+        color: var(--graycool100);
+        box-shadow: 0px 0px 8px var(--graycool900);
         z-index: 1;
-    }
-
-    .global-menu a {
-        display: flex;
-        align-items: center;
-        color: var(--cerulean600);
-        fill: var(--cerulean600);
-        text-decoration: none;
-        font-weight: 500;
-        border-radius: 4px;
-        padding: 4px;
-        transition-duration: 0.2s;
-    }
-
-    .global-menu a:hover {
-        color: var(--graycool0);
-        fill: var(--graycool0);
-        background-color: var(--cerulean600);
-        transition-duration: 0.2s;
-        box-shadow: 0px 0px 4px var(--cerulean600);
-        cursor: pointer;
     }
 
     .global-menu-chevron {
@@ -90,6 +70,7 @@
     }
 
     .global-menu-logo {
+        display: flex;
         width: 24px;
         height: 24px;
         fill: var(--cerulean600);
@@ -106,7 +87,7 @@
     .global-menu-hamburger {
         width: 24px;
         height: 24px;
-        fill: var(--cerulean600);
+        fill: var(--sunset600);
         margin-right: 16px;
         transition-duration: 0.2s;
         border-radius: 4px;
@@ -115,9 +96,9 @@
     .global-menu-hamburger:hover {
         transition-duration: 0.2s;
         cursor: pointer;
-        background-color: var(--cerulean600);
+        background-color: var(--sunset600);
         transition-duration: 0.2s;
-        box-shadow: 0px 0px 4px var(--cerulean600);
+        box-shadow: 0px 0px 4px var(--sunset600);
         fill: var(--graycool50);
     }
 
@@ -144,7 +125,9 @@
 
     .menu-container-router-link:hover {
         transition-duration: 0.2s;
-        color: var(--cerulean300);
+        color: var(--graycool0);
+        background-color: var(--cerulean600);
+        box-shadow: 0px 0px 8px var(--cerulean600);
         cursor: pointer;
     }
 
