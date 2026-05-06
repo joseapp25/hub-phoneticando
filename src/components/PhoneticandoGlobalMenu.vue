@@ -47,6 +47,7 @@
     import { useDarkMode } from '../composables/useDarkMode.js'
 
     const { isDark, toggleDarkMode } = useDarkMode()
+    
 </script>
 
 <style scoped>
@@ -58,9 +59,9 @@
         width: 100vw;
         height: 40px;
         top: 0;
-        background-color: var(--graycool900);
-        color: var(--graycool100);
-        box-shadow: 0px 0px 8px var(--graycool900);
+        background-color: var(--graycool0);
+        color: var(--graycool900);
+        box-shadow: 0px 0px 8px var(--graycool0);
         z-index: 1;
     }
 
