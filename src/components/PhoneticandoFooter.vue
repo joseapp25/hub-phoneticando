@@ -65,11 +65,11 @@
                 </svg>
             </div>
             <div class="footer-all-rights-reserved">
-                <p>Zé Antonio — Phoneticando</p>
+                <span>Copyright</span>
+                <span>&#169;</span>
+                <span>2026</span>
                 <span>|</span>
-                <p>&#174;2026</p>
-                <span>|</span>
-                <p>All Rights Reserved</p>
+                <span>Todos os Direitos Reservados</span>
             </div>
         </div>
     </div>
