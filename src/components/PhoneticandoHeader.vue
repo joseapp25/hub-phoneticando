@@ -19,7 +19,7 @@
 
 <style scoped>
     .header-style {
-        background-image: linear-gradient(to right, var(--cerulean700), var(--cerulean600));
+        background-image: linear-gradient(to right, var(--cerulean900), var(--cerulean1000));
         fill: var(--graycool800);
         margin-bottom: 64px;
         margin-top: 40px;
@@ -50,7 +50,7 @@
         margin-left: auto;
         margin-right: auto;
         color: var(--graycool100);
-        font-weight: 100;
+        font-weight: 200;
         font-size: 16px;
         font-style: italic;
     }
@@ -62,7 +62,7 @@
     }
 
     .elevenlabs-container a {
-        color: var(--sunset200);
+        color: var(--sunset600);
         padding: 2px;
         font-weight: 600;
         text-decoration: none;

@@ -1,5 +1,13 @@
+<script setup>
+  import MainLayout from './layouts/MainLayout.vue';
+</script>
+
 <template>
   <div class="app">
-    <router-view />
+    <MainLayout />
   </div>
 </template>
+
+<style scoped>
+
+</style>
