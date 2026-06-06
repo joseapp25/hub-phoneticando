@@ -117,6 +117,11 @@
         border-radius: 4px;
     }
 
+    .website-anchor:active {
+        color: var(--sunset100);
+        transition-duration: 0.2s;
+    }
+
     .social-container {
         gap: 4px;
         display: flex;
@@ -144,6 +149,11 @@
         fill: var(--graycool50);
     }
 
+    .social-link:active {
+        fill: var(--sunset300);
+        transition-duration: 0.2s;
+    }
+
     .social-link-text {
         display: flex;
         gap: 8px;
@@ -169,6 +179,12 @@
         box-shadow: 0px 0px 4px var(--cerulean600);
         color: var(--graycool0);
         fill: var(--graycool0);
+        transition-duration: 0.2s;
+    }
+
+    .contacts-link:active {
+        color: var(--sunset300);
+        fill: var(--sunset300);
         transition-duration: 0.2s;
     }
 

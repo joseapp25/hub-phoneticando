@@ -35,6 +35,7 @@
         color: var(--graycool0);
         font-size: 32px;
         line-height: 40px;
+        font-family: var(--font-inter-tight);
     }
 
     @media only screen and (min-width: 600px) {
@@ -64,7 +65,7 @@
     .elevenlabs-container a {
         color: var(--sunset600);
         padding: 2px;
-        font-weight: 600;
+        font-weight: 900;
         text-decoration: none;
         transition-duration: 0.2s;
     }
@@ -73,5 +74,10 @@
         color: var(--sunset300);
         transition-duration: 0.2s;
         text-decoration: underline;
+    }
+
+    .elevenlabs-container a:active {
+        color: var(--sunset100);
+        transition-duration: 0.2s;
     }
 </style>
