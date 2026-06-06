@@ -30,7 +30,6 @@
             <router-link class="menu-container-router-link" to="/lessons">Lessons</router-link>
             <router-link class="menu-container-router-link" to="/phonetics">Phonetics</router-link>
             <router-link class="menu-container-router-link" to="/about">About</router-link>
-            
         </div>
     </Transition>
 </template>
@@ -133,12 +132,12 @@
         right: 0;
         top: 0;
         z-index: 2;
-        height: -webkit-fill-available;
+        height: 100vh;
     }
 
     .menu-header {
         display: flex;
-        gap: 8px;
+        gap: 16px;
         padding: 16px;
         align-items: center;
         background-color: var(--cerulean100);
