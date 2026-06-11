@@ -74,7 +74,7 @@
         height: 48px;
         top: 0;
         background-color: white;
-        box-shadow: 0px 0px 8px var(--graycool200);
+        box-shadow: 0px 0px 4px var(--graycool200);
         z-index: 1;
     }
 
@@ -89,7 +89,7 @@
         width: 24px;
         height: 24px;
         fill: var(--cerulean600);
-        margin-left: 8px;
+        margin-left: 16px;
         transition-duration: 0.2s;
     }
 
@@ -108,8 +108,8 @@
         width: 24px;
         height: 24px;
         fill: var(--cerulean600);
-        margin-right: 16px;
         transition-duration: 0.2s;
+        margin-right: 24px;
         border-radius: 4px;
     }
 
