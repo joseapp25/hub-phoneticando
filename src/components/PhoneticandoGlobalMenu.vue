@@ -1,17 +1,19 @@
 <template>
     <div class="global-menu">
-        <router-link to="/">
-            <svg class="global-menu-logo" viewBox="0 0 1024 1024">
-                <path d="M899.471 169.143V32L124.531 169.143H899.471Z"/>
-                <path d="M757.135 717.714L899.471 224H124.531V498.286H266.867L124.531 992H899.471V717.714H757.135Z"/>
+        <div class="global-menu-container">
+            <router-link to="/">
+                <svg class="global-menu-logo" viewBox="0 0 1024 1024">
+                    <path d="M899.471 169.143V32L124.531 169.143H899.471Z"/>
+                    <path d="M757.135 717.714L899.471 224H124.531V498.286H266.867L124.531 992H899.471V717.714H757.135Z"/>
+                </svg>
+            </router-link>
+            <div class="menu-page-title">{{ pageTitle }}</div>
+            <svg class="global-menu-hamburger" viewBox="0 0 1024 1024" @click="toggleMenu">
+                <path d="M853.335 341.333H170.668V256H853.335V341.333Z"/>
+                <path d="M853.335 554.667H170.668V469.333H853.335V554.667Z"/>
+                <path d="M170.668 768H853.335V682.667H170.668V768Z"/>
             </svg>
-        </router-link>
-        <div class="menu-page-title">{{ pageTitle }}</div>
-        <svg class="global-menu-hamburger" viewBox="0 0 1024 1024" @click="toggleMenu">
-            <path d="M853.335 341.333H170.668V256H853.335V341.333Z"/>
-            <path d="M853.335 554.667H170.668V469.333H853.335V554.667Z"/>
-            <path d="M170.668 768H853.335V682.667H170.668V768Z"/>
-        </svg>
+        </div>
     </div>
     <Transition name="menu">
         <div class="menu-container" v-if="isMenuOpen">
@@ -68,14 +70,21 @@
     .global-menu {
         position: fixed;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         width: 100vw;
         height: 48px;
         top: 0;
         background-color: white;
         box-shadow: 0px 0px 4px var(--graycool200);
         z-index: 1;
+    }
+
+    .global-menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        padding-left: 16px;
+        padding-right: 24px;
     }
 
     .menu-page-title {
@@ -89,7 +98,6 @@
         width: 24px;
         height: 24px;
         fill: var(--cerulean600);
-        margin-left: 16px;
         transition-duration: 0.2s;
     }
 
@@ -109,7 +117,6 @@
         height: 24px;
         fill: var(--cerulean600);
         transition-duration: 0.2s;
-        margin-right: 24px;
         border-radius: 4px;
     }
 
