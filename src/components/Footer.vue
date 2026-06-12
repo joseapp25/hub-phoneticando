@@ -1,3 +1,7 @@
+<script setup>
+
+</script>
+
 <template>
     <div class="footer-style">
         <a href="https://phoneticando.com.br" target="_blank" class="website-anchor">phoneticando.com.br</a>

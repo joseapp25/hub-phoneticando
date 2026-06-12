@@ -1,3 +1,31 @@
+<script setup>
+    import { useRoute } from 'vue-router'
+    import { computed } from 'vue'
+
+    const route = useRoute()
+    const pageTitle = computed(() => route.meta.title)
+
+    import { ref, onMounted, onUnmounted } from 'vue'
+
+    const isMenuOpen = ref(false)
+
+    function toggleMenu(event) {
+        event.stopPropagation()
+        isMenuOpen.value = !isMenuOpen.value
+    }
+
+    function handleOutsideClick() {
+        isMenuOpen.value = false
+    }
+
+    onMounted(() => document.addEventListener('click', handleOutsideClick))
+    onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
+
+    import { useDarkMode } from '../composables/useDarkMode.js'
+
+    const { isDark, toggleDarkMode } = useDarkMode()
+</script>
+
 <template>
     <div class="global-menu">
         <div class="global-menu-container">
@@ -35,36 +63,6 @@
         </div>
     </Transition>
 </template>
-
-<script setup>
-
-    import { useRoute } from 'vue-router'
-    import { computed } from 'vue'
-
-    const route = useRoute()
-    const pageTitle = computed(() => route.meta.title)
-
-    import { ref, onMounted, onUnmounted } from 'vue'
-
-    const isMenuOpen = ref(false)
-
-    function toggleMenu(event) {
-        event.stopPropagation()
-        isMenuOpen.value = !isMenuOpen.value
-    }
-
-    function handleOutsideClick() {
-        isMenuOpen.value = false
-    }
-
-    onMounted(() => document.addEventListener('click', handleOutsideClick))
-    onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
-
-    import { useDarkMode } from '../composables/useDarkMode.js'
-
-    const { isDark, toggleDarkMode } = useDarkMode()
-    
-</script>
 
 <style scoped>
     .global-menu {

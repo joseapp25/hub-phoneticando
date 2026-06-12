@@ -1,3 +1,11 @@
+<script setup>
+    import { useRoute } from 'vue-router'
+    import { computed } from 'vue'
+
+    const route = useRoute()
+    const pageTitle = computed(() => route.meta.title)
+</script>
+
 <template>
     <div class="header-style">
         <h1>{{ pageTitle }}</h1>
@@ -8,14 +16,6 @@
         </div>
     </div>
 </template>
-
-<script setup>
-    import { useRoute } from 'vue-router'
-    import { computed } from 'vue'
-
-    const route = useRoute()
-    const pageTitle = computed(() => route.meta.title)
-</script>
 
 <style scoped>
     .header-style {

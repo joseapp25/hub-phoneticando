@@ -1,21 +1,21 @@
 <script setup>
-    import PhoneticandoGlobalMenu from '../components/PhoneticandoGlobalMenu.vue';
-    import PhoneticandoHeader from '../components/PhoneticandoHeader.vue';
-    import PhoneticandoFooter from '../components/PhoneticandoFooter.vue';
+    import GlobalMenu from '../components/GlobalMenu.vue';
+    import Header from '../components/Header.vue';
+    import Footer from '../components/Footer.vue';
 </script>
 
 <template>
     <header>
         <nav>
-            <PhoneticandoGlobalMenu />         
+            <GlobalMenu />         
         </nav>
-        <PhoneticandoHeader />
+        <Header />
     </header>
     <main>
         <router-view />
     </main>
     <footer>
-        <PhoneticandoFooter />
+        <Footer />
     </footer>
 </template>
 
