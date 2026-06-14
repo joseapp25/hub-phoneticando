@@ -1,10 +1,12 @@
+<template>
+
+    <div>about</div>
+
+</template>
+
 <script setup>
 
 </script>
-
-<template>
-
-</template>
 
 <style scoped>
 

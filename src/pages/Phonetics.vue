@@ -1,10 +1,12 @@
+<template>
+
+    <div>phonetics</div>
+
+</template>
+
 <script setup>
 
 </script>
-
-<template>
-
-</template>
 
 <style scoped>
 
