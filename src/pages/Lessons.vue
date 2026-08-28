@@ -3,7 +3,7 @@
     <div>lessons</div>
 
     <div class="test">
-        <AudioPlayer />
+        <AudioPlayer src="/src/midia/work-and-study.mp3"/>
     </div>
     
 </template>
