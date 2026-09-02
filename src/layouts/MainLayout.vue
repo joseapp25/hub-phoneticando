@@ -7,7 +7,7 @@
 <template>
     <header>
         <nav>
-            <GlobalMenu />         
+            <GlobalMenu />      
         </nav>
         <Header />
     </header>
